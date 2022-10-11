@@ -1,20 +1,20 @@
-*{
+ *{
      margin: 0;
      padding: 0;
      box-sizing: border-box ;
      list-style: none;
      text-decoration: none;
-     color: black;
      font-family: 'Raleway', sans-serif;
 }
 :root{
      --azulcalro:#EAF2FD;
+     --border-button:#2A7AE4;
 }
 body{
      background-color: #f5f5f5;
 }
 header{
-     width: min(1400px, 95%);
+     width: min(1136px, 95%);
      margin: 0 auto;
      display: flex;
      padding: 20px 0;
@@ -30,7 +30,7 @@ header{
 }
 .container{
      margin: 50px auto;
-     width: min(1400px, 95%);
+     width: min(1136px, 95%);
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -48,13 +48,14 @@ header{
      height: 250px;
      border-radius: 100%;
 }
+
 .sobreMim{
      width: 100%;
      background-color: var(--azulcalro);
 }
 .SobremimTex{
      margin: 0 auto;
-     width: min(1400px, 95%);
+     width: min(1136px, 95%);
      height: 100%;
 }
 .SobremimTex p{
@@ -65,7 +66,7 @@ header{
      height: 100%;
      padding: 50px 0;
 }
-@media (max-width: 650px) {  
+@media (max-width: 360px) {  
      .SobremimTex div{
           width: 100%;
           height: 100%;
@@ -78,11 +79,12 @@ header{
      padding: 10px 0;
 }
 /* ------------------ */
-.cardsSkills, .cardsHobbies , .blocoFormacao{
+.cardsSkills, .cardsHobbies , .blocoFormacao {
      display: flex;
-     width: min(1400px, 95%);
+     width: min(1136px, 95%);
      margin: 0 auto;
-     gap: 20px;
+     gap: 16px;
+     align-items: center;
      justify-content: center;
      flex-wrap: wrap;
 
@@ -124,5 +126,111 @@ section{
      align-items: center;
      justify-content: center;
      display: flex;
+     background-color: white;
+}
+/* Experiencia Profissional blocos */
+.blocoExperiencia{
+     width: min(1136px, 95%);
+     margin: 10px auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     vertical-align: middle;
+     gap: 16px;
+}
+.experienciaEsquerdo{
+     display: flex;
+     align-items: center;
+}
+.experienciaEsquerdo img{
+width: 100%;
+opacity: 0.95;
+filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
+}
+.btn1, .btn2 {
+     padding: 16px;
+     border-color: var(--border-button);
+}
+.btn1 a{
+     color:var(--border-button);
+     font-size: 1rem;
+
+}
+.btn2{
+     background-color: var(--border-button);
+}
+.btn2 a{
+     color: white;
+     font-size: 1rem;
+}
+/* bloco com a imagem na direita */
+.blocoExperiencia2{
+     width: min(1136px, 95%);
+     margin: 0px auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     vertical-align: middle;
+     flex-direction: row-reverse;
+     gap: 16px;
+}
+/*  ------------------------------------- */
+
+
+/* contato bloco */
+
+.blocoContato{
+     width: 100%;
+     height: 788px;
+     background-color: var(--azulcalro);
+}
+.blocoCentral{
+     display: flex;
+     width: min(1136px, 95%);
+     margin: 0 auto;
+     flex-wrap: wrap;
+     height: 788px;
+     gap: 16px;
+}
+/* .BlocoEsquerdo{
+} */
+.BlocoEsquerdo img{
+     width: 464px;
+     height: 593px;
+     width:100%;
+}
+@media (max-width: 360px){
+     .btn3{
+          background-color: yellow;
+     }
+}
+
+.blocoDireito{
+     display: flex;
+     width: 57%;
+     display: inline-flex;
+     flex-direction: column;
+     gap: 19px;
+}
+.blocoDireito input{
+     width: 100%;
+     height: 56px;
+     border-radius: 4px;
+
+}
+.btn3{
+     color: var(--azulcalro);
+     width: 165px;
+     padding: 16px;
+     background-color: var(--border-button);
+     border: none;
+}
+
+footer{
+     width: 100%;
+     height: 40px;
+     text-align: center;
      background-color: white;
 }
