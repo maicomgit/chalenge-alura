@@ -66,13 +66,6 @@ header{
      height: 100%;
      padding: 50px 0;
 }
-@media (max-width: 360px) {  
-     .SobremimTex div{
-          width: 100%;
-          height: 100%;
-          padding: 50px 0;
-     }
-}
 /* escritas antes dos cards */
 .Skills, .hobbies, .experiencia{
      text-align: center;
@@ -194,19 +187,13 @@ filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
      height: 788px;
      gap: 16px;
 }
-/* .BlocoEsquerdo{
-} */
+
+
 .BlocoEsquerdo img{
      width: 464px;
      height: 593px;
      width:100%;
 }
-@media (max-width: 360px){
-     .btn3{
-          background-color: yellow;
-     }
-}
-
 .blocoDireito{
      display: flex;
      width: 57%;
@@ -220,6 +207,9 @@ filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
      border-radius: 4px;
 
 }
+input::placeholder{
+     padding: 10px;
+}
 .btn3{
      color: var(--azulcalro);
      width: 165px;
@@ -230,7 +220,26 @@ filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
 
 footer{
      width: 100%;
-     height: 40px;
+     padding: 32px;
      text-align: center;
      background-color: white;
 }
+@media only screen and (max-width: 767px) {
+     #telefone{
+          display: none;
+     }
+     .SobremimTex div{
+          width: 100%;
+     }
+     .blocoDireito{
+          display: flex;
+          width: 100%;
+          display: inline-flex;
+          flex-direction: column;
+          gap: 19px;
+     }
+     .none {
+          display: none;
+     }
+}
+
