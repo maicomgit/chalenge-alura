@@ -154,24 +154,37 @@ width: 100%;
 opacity: 0.95;
 filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
 }
+/* Botoes  */
 .btn1, .btn2 {
      padding: 16px;
-     border-color: var(--border-button);
+     border-color:  var(--border-button);
+     border-width: 1px;
 }
 .btn1 a{
      color:var(--border-button);
      font-size: 1rem;
-
+     font-weight: 400;
+     
 }
 .btn2{
      background-color: var(--border-button);
-     border: none;
+     border-width: 1px;
+     border-width: 1px;
 }
 .btn2 a{
      color: white;
      font-size: 1rem;
-
+     font-weight: 400;
+     
 }
+.btn3{
+     color: var(--azulcalro);
+     width: 165px;
+     padding: 15px;
+     background-color: var(--border-button);
+     border-width: 1px;
+}
+/* ------------------------------------------------ */
 /* bloco com a imagem na direita */
 .blocoExperiencia2{
      width: min(1136px, 95%);
@@ -216,7 +229,7 @@ filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
      width: 57%;
      display: inline-flex;
      flex-direction: column;
-     gap: 16px;
+     gap: 19px;
 }
 .blocoDireito p {
      font-weight: 500;
@@ -230,13 +243,6 @@ filter: drop-shadow(2px 4px 6px rgb(0, 0, 0));
 input::placeholder{
      padding: 10px;
      font-weight: 400;
-}
-.btn3{
-     color: var(--azulcalro);
-     width: 165px;
-     padding: 16px;
-     background-color: var(--border-button);
-     border: none;
 }
 footer{
      width: 100%;
