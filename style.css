@@ -33,6 +33,9 @@ header{
      margin-left: 20px;
      font-weight: 500;
 }
+.e-mailHeader{
+     font-weight: 700 !important;
+}
 .container{
      margin: 50px auto;
      width: min(1136px, 95%);
@@ -259,9 +262,6 @@ footer p{
      #telefone{
           display: none;
      }
-     .nav ul li a {
-          font-weight: 500;
-     }
      .container{
           margin: 0px auto;
           width: min(1136px, 95%);
@@ -326,7 +326,7 @@ footer p{
      }
      .e-mailHeader{
           font-size: 14px;
-          font-weight: 400;
+          font-weight: 700;
      }
 }
 
@@ -383,6 +383,9 @@ footer p{
      }
      .blocoFormacao{
           gap: 7px;
+     }
+     .nav ul li a{
+          font-weight: 700;
      }
 }
 /* .cardsSkills div, .cardsHobbies div{
